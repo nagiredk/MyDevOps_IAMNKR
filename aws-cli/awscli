@@ -1,0 +1,14 @@
+#AWSCLI Commands 
+
+list the avaiable key pairs 
+=========================
+C:\Workspace\aws_terraform>aws ec2 describe-key-pairs --query "KeyPairs[*].KeyName" --output text
+abcd    keypair_aws     aws_keypair
+
+
+C:\Workspace\aws_terraform>aws ec2 describe-key-pairs --query "KeyPairs[*].KeyName" --output json
+[
+    "abcd",
+    "keypair_aws",
+    "aws_keypair"
+]
