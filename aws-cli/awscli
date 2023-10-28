@@ -12,3 +12,16 @@ C:\Workspace\aws_terraform>aws ec2 describe-key-pairs --query "KeyPairs[*].KeyNa
     "keypair_aws",
     "aws_keypair"
 ]
+
+=================================================
+
+EC2 Commands 
+
+C:\Workspace\aws_terraform>aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query "Reservations[*].Instances[*].InstanceId" --output text
+i-00082dcafef4c59fd
+
+
+C:\Workspace\aws_terraform>
+C:\Workspace\aws_terraform>aws ec2 describe-instances  --query "Reservations[*].Instances[*].InstanceId" --output text
+i-036b93eff58d74a07
+i-00082dcafef4c59fd
